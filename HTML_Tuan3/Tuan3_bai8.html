@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 8</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .Border-Color {
+            border-width: 8px;
+            border-color: green yellow blue pink;
+            border-style: solid;
+            margin-left: 15%;
+            width: 700px;
+            text-align: center;
+            color: red;
+        }
+        
+        .Border-Styles {
+            border-color: green yellow blue pink;
+            border-style: solid dotted groove double;
+            text-align: center;
+            border-width: 8px;
+            margin-left: 15%;
+            width: 700px;
+        }
+        
+        .Border-Width {
+            border-color: green yellow blue pink;
+            border-style: solid;
+            text-align: center;
+            border-width: 5px 10px 15px 20px;
+            margin-left: 15%;
+            width: 700px;
+        }
+        
+        .Border-Radius {
+            border-color: green yellow blue pink;
+            border-radius: 0px 30px 70px 20px;
+            border-style: solid;
+            text-align: center;
+            border-width: 8px;
+            margin-left: 15%;
+            width: 700px;
+        }
+        
+        #Adv {
+            border-width: 4px 30px 4px 30px;
+            border-style: groove ridge dashed groove;
+            border-color: #cc0000;
+            border-radius: 100px 100px 0 0;
+            margin-right: 40%;
+            text-align: center;
+            margin-left: 40%;
+        }
+        
+        #Round-Rectangle {
+            border-radius: 20px;
+            border-width: 2px;
+            text-align: center;
+            border-style: solid;
+            border-color: green;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        
+        #adv-round-rectangle {
+            border-width: 0px 12px 0px 12px;
+            border-style: double;
+            border-color: violet;
+            border-radius: 40px 40px 60px 60px;
+            text-align: center;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        
+        #Bullet {
+            border-radius: 20px 100px 100px 20px;
+            border-style: solid;
+            border-width: 2px;
+            text-align: center;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        
+        #adv-leaf {
+            background: orange;
+            border-width: 4px 30px 4px 30px;
+            border-style: solid;
+            border-color: #56c6d9 #56c6d9 #fe2192 #fe2192;
+            border-radius: 0 120px 0 120px;
+            text-align: center;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        
+        .button {
+            width: 200px;
+            padding: 8px;
+            background-color: #428bca;
+            border-color: #357ebd;
+            color: #ffffff;
+            border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            font-weight: 900;
+            font-size: 125%;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Border Color</h1>
+    <p>Syntax :
+        <font color="blue">border-color </font>:
+        <font color="red">(top) (right) (bottom) (left);</font>
+    </p>
+    <p>example:
+        <font color="blue">border-color </font>:
+        <font color="red">#85C226 #f7c200 #4493A0 #DF127B;</font>
+    </p>
+    <div class="Border-Color">
+        <p>Here the top border is green(#85C226) in color,</p>
+        <p>right boder is yellow(#F7C200)</p>
+        <p>the bottom has blue(#4493A0)</p>
+        <p>and Left border is pink(#DF127B) in color</p>
+    </div>
+
+
+    <h1>Border Styles</h1>
+    <div class="Border-Styles">
+        <p>Here the top border(green) has a solid style</p>
+        <p>right (yellow) one has dotted</p>
+        <p>bottom (blue) one has groove and</p>
+        <p>the left (pink) one has the double style</p>
+    </div>
+
+    <h1>border Width</h1>
+    <div class="Border-Width">
+        <p>Here Top (green) border's width is 5 pixel</p>
+        <p>right (yellow) border is 10 pixel wide</p>
+        <p>bottom (blue) is 15 pixel</p>
+        <p>and left (pink) is 20 pixel wide</p>
+    </div>
+
+    <h1>Border Radius</h1>
+    <div class="Border-Radius">
+        <p>No Border radius (0px) has been applied on the top-left (green-pink) corner</p>
+        <p>Border radius (30px) has been applied on the top-right (green-yellow) concer</p>
+        <p>Border radius (7.0px) has been applied on the bottom-right (blue-yellow) concer</p>
+        <p>Border radius (20px) has been applied on the bottom-left (blue-pink) concer</p>
+    </div>
+
+    <h1>Adv-Hemisphere</h1>
+    <div id="Adv">
+        <p>Adv-Hemisphere</p>
+    </div>
+
+    <h1>Round-Rectangle</h1>
+    <div id="Round-Rectangle">
+        <p>Round-Rectangle</p>
+    </div>
+
+    <h1>Advanced Round Rectangle</h1>
+    <div id="adv-round-rectangle">
+        <p>Advanced Round Rectangle
+        </p>
+    </div>
+
+    <h1>Bullet</h1>
+    <div id="Bullet">
+        <p> Bullet</p>
+    </div>
+
+    <h1>Advanced-Leaf</h1>
+    <div id="adv-leaf">
+        <p>Advanced-Leaf</p>
+    </div>
+
+    <h1>Tao nut lenh css</h1>
+    <div>
+        <button class="btn btn-primary"> Subscribe Now</button>
+    </div>
+</body>
+
+</html>
